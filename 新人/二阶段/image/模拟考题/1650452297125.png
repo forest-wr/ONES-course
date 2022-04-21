@@ -1,0 +1,305 @@
+{
+	"is_dev": true,
+	"port": 9001,
+	"internal_port": 9101,
+	"internal_plugin_platform_port": 9102,
+	"log_file": "./ones.log",
+	"version": "2.15.0",
+	"release_version": "",
+	"platform": "Unknown",
+	"commit_hash": "d80231c0c74f62954422899120449e15df5cae5d",
+	"push_data": false,
+	"max_request_body_size": 2147483648,
+
+	"db_driver":"mysql",
+	"db_spec":"bang:bang@tcp(127.0.0.1:3306)/bang?parseTime=true&loc=Asia%2FShanghai&charset=utf8mb4",
+	"db_max_idle":10,
+	"db_max_open":1024,
+	"db_conn_max_life_time":1800,
+	"db_show_log":false,
+
+	"wiki_db_driver":"mysql",
+	"wiki_db_spec":"bang:bang@tcp(127.0.0.1:3306)/wiki?parseTime=true&loc=Asia%2FShanghai&charset=utf8mb4",
+	"wiki_db_max_idle":10,
+	"wiki_db_max_open":1024,
+	"wiki_db_conn_max_life_time":1800,
+	"wiki_db_show_log": false,
+
+	"pg_db_driver": "postgres",
+	"pg_db_spec":"postgres://bang:bang@localhost/audit_log?sslmode=disable",
+	"pg_db_max_idle":10,
+	"pg_db_max_open":1024,
+	"pg_db_show_log":false,
+
+	"redis_host":"127.0.0.1",
+	"redis_port":6379,
+	"redis_password": "",
+	"redis_db_project":1,
+	"redis_db_common":12,
+	"redis_db_wiki":13,
+	"redis_db_ratelimit": 4,
+	"redis_db_webhook":14,
+	"redis_max_idle":20,
+	"redis_max_active":1024,
+	"redis_idle_timeout":180,
+	"redis_expire": 7776000,
+
+	"redis_db_queue": 100,
+	"redis_db_lock": 101,
+
+	"es_host":"localhost",
+	"es_port":9200,
+	"es_index":"ones",
+	"es_file_index":"ones_file",
+	"es_user": "",
+	"es_secret":"",
+
+	"black_list_ban_interval":60,
+	"black_list_max_fail_count":1000,
+	"black_list_clean_interval":300,
+
+	"phone_ip_ratelimit_capacity": 10,
+	"phone_ip_ratelimit_min_interval": 60,
+	"phone_ip_ratelimit_eliminate_interval": 7200,
+	"phone_number_ratelimit_capacity": 5,
+	"phone_number_ratelimit_min_interval": 60,
+	"phone_number_ratelimit_eliminate_interval": 7200,
+
+	"camunda_url": "http://47.107.225.56:8080/engine-rest",
+	"invite_ratelimit_capacity": 50,
+
+	"api_base_url": "http://localhost:9001",
+	"app_base_url": "https://sandbox.ones.ai/do",
+	"bot_base_url": "http://localhost:9003",
+	"android_app_push_action":"ai.ones.android.ones.sandbox.push",
+	"ios_app_push_cert":"dev",
+	"ones_official_website_url":"https://dev.ones.team/website/F1104_bugfix",
+	"internal_api_base_url": "http://localhost:9001",
+
+	"wiki_api_base_url": "http://localhost:9002",
+	"wiki_app_base_url": "",
+	"internal_wiki_api_base_url": "http://localhost:9002",
+
+	"email_from_name":"ONES.AI",
+	"email_smtp_server":"smtp.qiye.163.com",
+	"email_smtp_port":994,
+	"email_user":"sys@mail.ones.ai",
+	"email_password":"iBW96P%9f",
+	"email_rfc_allow_plain_text_authentication": true,
+	"email_connect_security_encryption_type": "ssl",
+	"email_auth_login_type": "PLAIN",
+	"email_image_base_url": "https://dl.ones.ai",
+
+	"notify.email_from_name":"ONES.AI Test",
+	"notify.email_smtp_server":"smtpdm.aliyun.com",
+	"notify.email_smtp_port":465,
+	"notify.email_user":"info@mail.al.ones.ai",
+	"notify.email_password":"LzDjs43id7FbHxZj0RIk",
+	"notify.email_rfc_allow_plain_text_authentication": true,
+	"notify.email_connect_security_encryption_type": "ssl",
+	"notify.email_auth_login_type": "PLAIN",
+
+	"task_timer_cron": "0 0 8 * * *",
+	"task_deadline_notice_rule_cron": "0 0 9 * * *",
+	"support_request_timer_cron": "0 0 3 * * *",
+
+	"copy_project_teams": "AsVKxFb7",
+
+	"telesign_customer_id":"",
+	"telesign_secret_key":"",
+	"aliyun_sms_access_key":"",
+	"aliyun_sms_secret": "",
+
+	"file_storage": "qiniu",
+	"local_file_root": "/var/tmp/ones-files",
+	"unoconv_exec": "unoconv",
+	"unoconv_proxy_service_base_url": "",
+	"unoconv_proxy_service_request_timeout": 57,
+	"unoconv_proxy_service_command_timeout": 55,
+	"qiniu_access_key":"3Ub47hHnTjuEuV7uF9IS4cGwOWZGAtiBkPmA09e1",
+	"qiniu_secret_key":"rOjzhi3cmXVWM147Tizc4rAy87lPa5k63-1aHgJa",
+	"qiniu_private_bucket":"ones-dev-private",
+	"qiniu_private_domain":"dl.dev.ones.ai",
+	"qiniu_public_bucket":"ones-dev-public",
+	"qiniu_public_domain":"dl2.dev.ones.ai",
+	"qiniu_doc_preview": "ones-doc-preview-dev",
+	"avatar_max_size":5242880,
+	"attachment_max_size":314572800,
+	"team_logo_max_size":5242880,
+	"jira_backup_max_size":1073741824,
+	"confluence_backup_max_size":1073741824,
+	"word_max_size":104857600,
+	"word_zip_max_size":314572800,
+	"wps_max_size":104857600,
+	"wps_zip_max_size":314572800,
+
+	"stamp_cache_pool_size": 1048576000,
+	"leancloud_app_id":"hmqXy3HXQKNBTfWRTzj7JJRm-gzGzoHsz",
+	"leancloud_master_key":"devLvxCiscmRSGW7b3uLakAR",
+
+	"pipeline_registry_host": "pl.pantalo.xyz",
+
+	"worker_id" : 0,
+	"sprint_timeline_visibility":false,
+	"testcase_visibility":true,
+	"project_panel_visibility":false,
+	"project_panel_sha1_key":"",
+
+	"default_join_team_uuid":"",
+
+	"wechat_provider_corpid":"wwb8520da7542392a9",
+	"wechat_provider_secret":"v2MYwfqZUMEHXcfI9q-xqk2Z5-vIvClGef7UUxWW66t1mGL_-16uSaX37CGJtgAr",
+	"wechat_suiteid":"ww05b4936c726f1748",
+	"wechat_suitesecret":"x8R-oMAr_YJE3U2kJqU1cCY7jol2XUvWSr9iQ7xDhQw",
+	"wechat_callback_token":"nHI0Om49BUIAbflA0Ua",
+	"wechat_callback_encoding_aeskey":"CThIcYlYpYi00ddz7N9snW6n2DPyo51S34E5w2IPEmX=",
+	"wechat_auth_type":1,
+
+	"wechat_email_sync_for_activate": false,
+
+	"dingding_provider_corpid":"ding2697c0be1bddac8335c2f4657eb6378f",
+	"dingding_provider_secret":"x8od2uaSJX_lrBePftvWCbOprXDmcPU7spG0eNdBtt6-BgOFO-IyxWKJNtfecrug",
+	"dingding_suitesecret":"1ZuTSkBlX7hzPXv3nz383_CrDtfS9XQCMSeVoxMBIvQzsgCqHuC6C4jPPeTMHFOW",
+	"dingding_suitekey":"suitewgztojfxipke9o69",
+	"dingding_callback_token":"yu123456yu",
+	"dingding_callback_encoding_aeskey":"i1zkd9wu2o8re51jd7pf6ph11ay86uilc5i8y2sg729",
+	"dingding_callback_url":"https://api.ones.team/project/F1205/dingding",
+
+	"dingding_appid":"dingoahhrxrd0z9ioebbie",
+	"dingding_appsecret":"0lwbf-k_aTeAJfyEE6oC8e1ryiOyXBCKhCSG-5Ep9KaV1D-I3M4lm2iruxe4qNoF",
+	"dingding_auto_join_team":false,
+
+	"dingdingv2_corpid": "ding8b62c5bcd12e5bedffe93478753d9884",
+	"dingdingv2_agent_id": 1102854282,
+	"dingdingv2_app_key": "dingmkoxn5exihsog95s",
+	"dingdingv2_app_secret": "VblrPteqONXdFVXB1kzTuRYbowpcxBTgvDVrjusRFR_HGzjwG-uuclVaoZNgufJd",
+	"dingdingv2_callback_token": "EPxW3vTcLtX83hjvnGFy9E30NkTeVjtp61lCONytZxNZjIZL",
+	"dingdingv2_callback_aeskey": "iziMCs0M3iU1lK5oeFr7Ac3IIPJUnW4IiGDwYmu8y06",
+
+	"lark_app_id": "",
+	"lark_app_secret": "",
+	"lark_event_encrypt_key": "",
+	"lark_event_verification_token": "",
+	"lark_sync_email_for_active": false,
+	"lark_sync_min_interval": 10,
+	"lark_auto_join_team": false,
+
+	"ldap_auto_join_team": false,
+	"open_api_ldap_login": false,
+	"ldap_ad_version_before_windows2000": false,
+	"ldap_sync_min_interval": 10,
+
+	"open_api_google_login":false,
+	"open_api_users_add":false,
+	"open_api_users_download_template":false,
+	"open_api_users_upload":false,
+
+	"open_api_partner_login": false,
+
+	"cas_auto_join_team": false,
+	"open_api_cas_login": false,
+
+	"saml_auto_join_team": false,
+	"saml_service_provider_issuer": "",
+	"saml_service_provider_x509_key": "",
+	"saml_service_provider_x509_cert": "",
+
+	"converter_path": "",
+	"converter_sync_min_interval": 10,
+	"enable_share_third_party_corp_uuid": false,
+
+	"ipip_token": "d17",
+
+	"workorder_miniapp_default_app_id": "",
+	"workorder_miniapp_default_secret": "",
+	"workorder_miniapp_default_message_id": "",
+	"workorder_miniapp_agent_url" : "https://wechat-mini.myones.net",
+
+	"workorder_notify" : false,
+	"workorder_portal_enable" : false,
+
+	"expire_warning_days": 31,
+
+	"enable_amqp" : true,
+	"enable_es_file_parsing_optimization": false,
+	"amqp_url" : "amqp://guest:guest@localhost:5672",
+
+	"password_retry_count_limit": 5,
+	"password_retry_max_waiting_seconds": 600,
+	"password_strong": false,
+
+    "login_captcha_trigger_count": 4,
+
+	"libreoffice_path": "/usr/bin/libreoffice7.1",
+	"libreoffice_proxy_service_base_url": "",
+	"libreoffice_proxy_service_request_timeout": 57,
+	"libreoffice_proxy_service_command_timeout": 55,
+
+	"pandoc_exec": "pandoc",
+	"pandoc_proxy_service_base_url": "",
+	"pandoc_proxy_service_request_timeout": 57,
+	"pandoc_proxy_service_command_timeout": 55,
+
+	"enable_get_wechat_callback_ip_list": true,
+
+	"ones_appid":"",
+	"call_base_urls_update_white_ip_list": "*",
+	"ones_app_secret":"",
+	"download_app_web_page_url":"",
+	"apps_software_upgrade_dir":"",
+
+	"list_login_type": ["email","wechat"],
+
+	"resource_filter_type": "whitelist",
+	"resource_filter_list": [".*"],
+	"enable_agent": false,
+	"enable_modify_login_page_logo": false,
+
+	"pipeline_team_uuid_white_list": "QKnGRiP7,4nchpxXc,YU1b8JwA,6MSgUf5H,59wGAufD",
+	"github_client_id": "385a15378a83264b3aa7",
+	"github_client_secret": "e7c04599206afcecf1adf9374acd9b06a9b8bae8",
+	"gitlab_client_id": "8351463ebcc0cb7d7447bc846898216f4ba1ed2705dcc2cc067b753597b449db",
+	"gitlab_client_secret": "b991ca0c868cb956eec20019e3bf18dd1a7b377825cdaeddc05c71697fec5725",
+	"scm_oauth_redirect_url": "https://dev.myones.net/project/master",
+	"devops_api_uri": "http://localhost:9004",
+	"enable_plugin": false,
+	"enable_webhook": false,
+	"enable_encrypt_pwd": false,
+	"plugin_platform_url": "http://localhost:9005",
+	"enable_login_notice": false,
+
+	"generic_storage_base_url": "",
+	"generic_storage_privkey": "",
+	"generic_storage_doc_preview": "pdf_preview",
+
+	"users_search_filter_by_context_enable": false,
+
+	"enable_uniportal": true,
+	"uniportal_login_url": "https://uniportal.myones.net/uniportal",
+	"uniportal_idaas_access_key": "46vuymaQz9YtIU1sNlXLCEFDrH3pJw05",
+	"uniportal_idaas_secret_key": "4CZgUIuJVHGNj5TmzM2RWw9KFQxt1esc",
+	"uniportal_token_auth_url": "https://uniportal.myones.net/api/idaas/token/auth",
+	"uniportal_query_user_url": "https://uniportal.myones.net/api/mdm/user/query",
+	"uniportal_iam_token_url": "https://uniportal.myones.net/api/iam/token/create",
+	"uniportal_iam_access_key": "DP52vaHmBcLquEJFb3fkprId764KO8sx",
+	"uniportal_iam_secret_key": "vQpYOZG3jh0wqJLmr2XMxiyPtUnsCWKu",
+	"uniportal_iam_project": "ones",
+	"uniportal_iam_enterprise": "ones",
+	"internal_email_suffix": [
+		"hiuniportal.com",
+		"pmail.hiuniportal.com"
+	],
+	"uniportal_cross_domain": ".hiuniportal.com",
+	"uniportal_idaas_auth_url": "http://lance.hiuniportal.com:8080/ssodemo",
+	"testcase_report_check_permission_mode":"simple",
+
+	"wiz_editor": "{\"new_org_enable\":true,\"max_online_users_count\":100,\"default_enable\":false}",
+	"wiki_editor": "{\"new_org_enable\":false,\"default_enable\":true}",
+
+	"wiki_ck_off_guide_can_run": true,
+
+	"dkron_addr": "",
+
+	"token_expiration_time_seconds": -1
+
+}
